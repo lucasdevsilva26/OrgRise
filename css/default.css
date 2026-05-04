@@ -1,0 +1,161 @@
+:root {
+  --bg-color1: #ffffff;
+  --bg-color2: #f4f4f4;
+
+  --border-color: #36d3a6;
+  --border-size: 0.15rem;
+
+  --button-color: #368cd3;
+
+  --title-color: #878787;
+  --text-color: #a7a7a7;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+
+  background: none;
+
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+
+  background-color: var(--bg-color1);
+}
+
+header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+
+  padding: 0.25rem 1rem;
+
+  border-bottom: var(--border-size) solid var(--border-color);
+}
+#header-logo {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+#header-logo__icon {
+  height: 2.75rem;
+}
+#header-logo__name {
+  color: var(--title-color);
+}
+#header-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  height: 75%;
+}
+.header-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bolder;
+}
+#header-buttons__support {
+  color: var(--button-color);
+
+  font-size: 0.9rem;
+}
+#header-buttons__login {
+  height: 1.5rem;
+  padding: 0.125rem 0.5rem;
+
+  border-radius: 9999px;
+  border: var(--border-size) solid var(--button-color);
+
+  color: var(--button-color);
+}
+#header-buttons__create-account {
+  height: 2rem;
+  padding: 0.35rem 0.5rem;
+
+  border-radius: 9999px;
+
+  background-color: var(--button-color);
+
+  color: var(--bg-color1);
+  font-size: 0.95rem;
+}
+#header-buttons__menu {
+  color: var(--button-color);
+
+  font-size: 1.5rem;
+}
+
+main {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.25rem 1rem;
+
+  border-top: var(--border-size) solid var(--border-color);
+}
+#footer-social-medias {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+#footer-social-medias-title {
+  color: var(--text-color);
+}
+#footer-social-medias-buttons {
+  display: flex;
+  gap: 0.75rem;
+
+  padding: 0.5rem;
+}
+.footer-social-medias-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 1.75rem;
+  height: 1.75rem;
+
+  border-radius: 9999px;
+  background-color: var(--button-color);
+
+  color: var(--bg-color1);
+}
+#footer-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  padding: 0.25rem 1rem;
+
+  border-top: var(--border-size) solid var(--border-color);
+}
+#footer-mark-text {
+  color: var(--text-color);
+}
